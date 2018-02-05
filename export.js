@@ -21,7 +21,7 @@ function exportCsv(eData) {
     var oneLine = eData[i];
     var onelineData = '';
     for (y in oneLine) {
-      value = oneLine[y];
+      var value = oneLine[y];
       onelineData += escapeSpecialChars(value) + ","
     }
     tableBodyData += onelineData + '\n'
